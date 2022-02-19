@@ -56,7 +56,7 @@ def takeCommand():
 def sendEmail(to,content):
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
-    server.login('ssharma86099@gmail.com', 'saxenaabhishek')
+    server.login('ssharma86099@gmail.com', '************')
     server.sendmail('ssharma86099@gmail.com',to,content)
     server.close()
     speak("Mail Sent")
